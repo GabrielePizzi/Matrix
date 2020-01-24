@@ -11,11 +11,9 @@ import java.util.*;
  */
 public class Matrox {
 
-    /**
-     * @param args the command line arguments
-     */
+
     public static void main(String[] args) throws FileNotFoundException {
-                Scanner input = new Scanner(new File("matrix.txt"));
+                Scanner input = new Scanner(new File("C:\\Users\\pizzi.gabriele\\Documents\\NetBeansProjects\\Matrix\\matrix.txt"));
 // pre-read in the number of rows/columns
         int rows = 0;
         int columns = 1;
@@ -23,11 +21,10 @@ public class Matrox {
         System.out.println("matrix has " + rows + " rows and " + columns + " columns");
         int[][] a = new int[rows][columns];
 
-        input = new Scanner(new File("matrix.txt"));
+        input = new Scanner(new File("C:\\Users\\pizzi.gabriele\\Documents\\NetBeansProjects\\Matrix\\matrix.txt"));
 
-        for (int i = 0; i < 10; i++) {
-
-            for (int j = 0; j < 10; j++) {
+        for (int i = columns-1; i >=0; i--) {
+            for (int j = rows-1; j >=0; j--) {
                 
                 if (input.hasNextInt()) {
                     a[i][j] = input.nextInt();
