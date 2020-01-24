@@ -1,2 +1,2 @@
 # Matrix
-Martix
+Matrix
